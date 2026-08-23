@@ -55,7 +55,7 @@ export default function Navbar() {
           href="#top"
           className="font-mono text-sm font-semibold tracking-tight text-foreground"
         >
-          Emiliano<span className="text-accent">.</span>dev
+          Emiliano<span className="text-accent">.</span>La Paz
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

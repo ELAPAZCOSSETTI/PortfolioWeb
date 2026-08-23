@@ -1,9 +1,9 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { personal } from "@/data/profile";
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
-import { LinkedinIcon } from "./icons";
+import { GithubIcon, LinkedinIcon } from "./icons";
 
 const CHANNELS = [
   {
@@ -21,11 +21,15 @@ const CHANNELS = [
     label: "linkedin.com/in/emilianolp",
     href: personal.linkedin,
   },
-  {
-    icon: MapPin,
-    label: personal.location,
-    href: undefined,
-  },
+  ...(personal.github
+    ? [
+        {
+          icon: GithubIcon,
+          label: personal.github.replace("https://", ""),
+          href: personal.github,
+        },
+      ]
+    : []),
 ];
 
 export default function Contact() {

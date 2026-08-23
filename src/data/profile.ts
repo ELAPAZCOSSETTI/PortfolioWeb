@@ -1,24 +1,21 @@
 export const personal = {
   name: "Emiliano La Paz",
-  role: "Full Stack Developer",
+  role: "Full Stack Developer junior",
   location: "Luján de Cuyo, Mendoza, Argentina",
   email: "sk8emi95lp@gmail.com",
   phone: "+54 261 247-8856",
   linkedin: "https://linkedin.com/in/emilianolp/",
-  // TODO(Emiliano): agregar usuario/URL de GitHub cuando lo tengas.
-  github: null as string | null,
-  photo: "/images/profile.png",
+  github: "https://github.com/ELAPAZCOSSETTI" as string | null,
+  photo: "/images/FotoEmiliano.jpg",
   cvUrl: "/cv-emiliano-lapaz.pdf",
   tagline:
     "Construyo interfaces web con React y Next.js, con una base sólida en redes, sistemas y resolución de problemas técnicos en producción.",
 };
 
-// TODO(Emiliano): completar con tu ocupación/rol actual (post-Wiber, desde octubre 2025)
-// y cualquier detalle que no esté en el CV. Estos dos párrafos son un punto de partida.
 export const bio = [
   "Técnico Electrónico con más de 3 años de experiencia resolviendo problemas de conectividad, redes y sistemas en entornos reales: desde instalaciones de fibra óptica hasta soporte técnico remoto con manejo de TCP/IP, MikroTik y Linux.",
   "Desde 2024 vengo sumando formación intensiva en desarrollo web full stack (JavaScript, React, Next.js, bases de datos y fundamentos de backend), combinando esa base técnica de redes y sistemas con la construcción de productos web modernos.",
-  "[TODO: agregar a qué te dedicás actualmente y qué estás buscando]",
+  "Actualmente soy Technical Support Operations Lead & AI Implementation Specialist en Wara, empresa de software y hardware de tracking GPS. Coordino un equipo de soporte técnico (Nivel 1 y 2) y lidero la integración de un asistente conversacional con IA: diseño la lógica de interacción, la ingeniería de prompts y las pruebas de QA funcional, trabajando codo a codo con las áreas de Desarrollo y Producto para convertir necesidades operativas en soluciones escalables. Hoy busco dar el salto a roles de desarrollo de software e implementación de IA, combinando código, lógica de negocio y gestión de equipos.",
 ];
 
 export type SkillCategory = {
@@ -65,15 +62,27 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "Wara",
+    role: "Technical Support Operations Lead & AI Implementation Specialist",
+    period: "Octubre 2025 - Actualidad",
+    current: true,
+    bullets: [
+      "Coordinación de un equipo de soporte técnico (Nivel 1 y 2), estructurando el área con KPIs, gestión de Backoffice y resolución de incidencias de alta complejidad en software y hardware GPS.",
+      "Liderazgo en la integración de un asistente conversacional con IA: diseño de la lógica de interacción, ingeniería de prompts basada en datos históricos y QA funcional de respuestas.",
+      "Asesoramiento preventivo a clientes estratégicos para optimizar su operativa diaria y reducir incidencias recurrentes.",
+      "Colaboración directa con las áreas de Desarrollo y Producto para traducir requerimientos operativos en soluciones tecnológicas escalables.",
+    ],
+  },
+  {
     company: "Wiber - Soluciones en Conectividad",
     role: "Soporte técnico remoto",
     period: "Septiembre 2024 - Septiembre 2025",
     current: false,
     bullets: [
-      "Atención y resolución de incidencias en servicios de internet y TV.",
-      "Configuración de equipos (routers, MikroTik, Linux básico).",
-      "Manejo de IPs, protocolos TCP/IP y redireccionamiento de puertos.",
-      "Registro y seguimiento de casos con sistema de tickets.",
+      "Diagnóstico y resolución de incidencias de conectividad de nivel 1 y 2 en servicios de internet y TV.",
+      "Configuración de equipos (routers, MikroTik, Linux básico) y troubleshooting de IPs, protocolos TCP/IP y redireccionamiento de puertos.",
+      "Gestión y priorización de tickets: documentación de causas, seguimiento hasta la resolución y escalamiento de casos complejos.",
+      "Primer proyecto como programador: actualización del sistema de facturación mensual de clientes con HTML y CSS embebido, mejorando la atención visual y la experiencia del cliente.",
     ],
   },
   {
@@ -82,8 +91,10 @@ export const experience: Experience[] = [
     period: "Abril 2023 - Mayo 2024",
     current: false,
     bullets: [
-      "Instalación de servicios FTTH y wireless.",
-      "Configuración y armado de fichas RJ45.",
+      "Instalación de servicios FTTH y wireless, con verificación de señal mediante power meter y mejora de tendidos existentes.",
+      "Fusión de fibra óptica y armado de conectores APC y UPC.",
+      "Configuraciones internas de routers y trabajo en equipo con otras cuadrillas técnicas.",
+      "Uso de elementos de protección personal (EPP) y capacitaciones de seguridad e higiene.",
     ],
   },
   {
@@ -92,8 +103,8 @@ export const experience: Experience[] = [
     period: "2022 - 2023",
     current: false,
     bullets: [
-      "Migración de infraestructura de HFC a FTTH.",
-      "Despliegue subterráneo de fibra óptica.",
+      "Migración de infraestructura de HFC a FTTH, con fusión de fibra óptica y armado de conectores APC y UPC.",
+      "Despliegue subterráneo de fibra óptica, con uso de elementos de protección personal y capacitaciones de seguridad e higiene.",
     ],
   },
   {
@@ -102,8 +113,8 @@ export const experience: Experience[] = [
     period: "2022 - 2023",
     current: false,
     bullets: [
-      "Instalaciones FTTH, HFC y EOC.",
-      "Trabajos en altura y con corriente eléctrica.",
+      "Instalaciones FTTH, HFC y EOC, con fusión de fibra óptica y armado de conectores APC y UPC.",
+      "Trabajos en altura y con corriente eléctrica, aplicando elementos de protección personal y capacitaciones de seguridad e higiene.",
     ],
   },
 ];

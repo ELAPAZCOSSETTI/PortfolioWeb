@@ -25,7 +25,7 @@ export default function Hero() {
             Hola, soy Emiliano 👋
           </p>
           <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {personal.role} en formación,
+            {personal.role},
             <br />
             <span className="text-gradient">técnico de raíz.</span>
           </h1>
