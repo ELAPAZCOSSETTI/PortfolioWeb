@@ -116,7 +116,7 @@ export const experience: Experience[] = [
     current: false,
     bullets: [
       "Instalaciones FTTH, HFC y EOC.",
-      "Trabajos en altura y con corriente eléctrica con uso correspondiente de elementos de proteccion personal.",
+      "Trabajos en altura y con corriente eléctrica con uso correspondiente de elementos de protección personal.",
     ],
   },
   {

@@ -46,9 +46,9 @@ export default function Contact() {
 
         <Reveal delay={80}>
           <p className="mb-10 max-w-xl leading-relaxed text-muted">
-            Estoy buscando mi primera oportunidad como desarrollador full stack.
-            Si tenés una posición abierta o simplemente querés charlar sobre una
-            idea, escribime.
+            Estoy buscando mi primera oportunidad en desarrollo de software o
+            implementación de IA. Si tenés una posición abierta o simplemente
+            querés charlar sobre una idea, escribime.
           </p>
         </Reveal>
 
