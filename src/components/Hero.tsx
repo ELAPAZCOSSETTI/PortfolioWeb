@@ -27,7 +27,7 @@ export default function Hero() {
           <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             {personal.role},
             <br />
-            <span className="text-gradient">técnico de raíz.</span>
+            <span className="text-gradient">en transición desde liderazgo técnico.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             {personal.tagline}

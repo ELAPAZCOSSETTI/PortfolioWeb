@@ -1,6 +1,6 @@
 export const personal = {
   name: "Emiliano La Paz",
-  role: "Full Stack Developer junior",
+  role: "Full Stack Developer",
   location: "Luján de Cuyo, Mendoza, Argentina",
   email: "sk8emi95lp@gmail.com",
   phone: "+54 261 247-8856",
