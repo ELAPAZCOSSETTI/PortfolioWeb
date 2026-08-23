@@ -1,9 +1,13 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { personal } from "@/data/profile";
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
-import { GithubIcon, LinkedinIcon } from "./icons";
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "./icons";
+
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Hola Emiliano, vi tu portfolio y me gustaría contactarte."
+);
 
 const CHANNELS = [
   {
@@ -12,9 +16,9 @@ const CHANNELS = [
     href: `mailto:${personal.email}`,
   },
   {
-    icon: Phone,
-    label: personal.phone,
-    href: `tel:${personal.phone.replace(/\s|-/g, "")}`,
+    icon: WhatsappIcon,
+    label: `${personal.phone} (WhatsApp)`,
+    href: `https://wa.me/${personal.whatsapp}?text=${WHATSAPP_MESSAGE}`,
   },
   {
     icon: LinkedinIcon,

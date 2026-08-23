@@ -4,6 +4,8 @@ export const personal = {
   location: "Luján de Cuyo, Mendoza, Argentina",
   email: "sk8emi95lp@gmail.com",
   phone: "+54 261 247-8856",
+  // Los celulares argentinos necesitan el "9" después del 54 para los links de wa.me.
+  whatsapp: "5492612478856",
   linkedin: "https://linkedin.com/in/emilianolp/",
   github: "https://github.com/ELAPAZCOSSETTI" as string | null,
   photo: "/images/FotoEmiliano.jpg",
@@ -30,11 +32,11 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "Backend & Datos",
-    items: ["Node.js (fundamentos)", "Bases de datos / SQL (fundamentos)"],
+    items: ["Node.js (fundamentos)", "Bases de datos / SQL", "PostgreSQL", "Docker"],
   },
   {
     title: "Mobile",
-    items: ["React Native (introducción)"],
+    items: ["React Native", "Android Studio"],
   },
   {
     title: "Redes & Sistemas",
@@ -48,7 +50,7 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "Otros conocimientos",
-    items: ["POO en Java", "Automatización con Arduino"],
+    items: ["Git y control de versiones", "Postman", "Vercel"],
   },
 ];
 
@@ -64,7 +66,7 @@ export const experience: Experience[] = [
   {
     company: "Wara",
     role: "Technical Support Operations Lead & AI Implementation Specialist",
-    period: "Octubre 2025 - Actualidad",
+    period: "2025 - Actualidad",
     current: true,
     bullets: [
       "Coordinación de un equipo de soporte técnico (Nivel 1 y 2), estructurando el área con KPIs, gestión de Backoffice y resolución de incidencias de alta complejidad en software y hardware GPS.",
@@ -76,7 +78,7 @@ export const experience: Experience[] = [
   {
     company: "Wiber - Soluciones en Conectividad",
     role: "Soporte técnico remoto",
-    period: "Septiembre 2024 - Septiembre 2025",
+    period: "2024 - 2025",
     current: false,
     bullets: [
       "Diagnóstico y resolución de incidencias de conectividad de nivel 1 y 2 en servicios de internet y TV.",
@@ -88,13 +90,13 @@ export const experience: Experience[] = [
   {
     company: "Wesnet",
     role: "Técnico de campo",
-    period: "Abril 2023 - Mayo 2024",
+    period: "2023 - 2024",
     current: false,
     bullets: [
       "Instalación de servicios FTTH y wireless, con verificación de señal mediante power meter y mejora de tendidos existentes.",
       "Fusión de fibra óptica y armado de conectores APC y UPC.",
       "Configuraciones internas de routers y trabajo en equipo con otras cuadrillas técnicas.",
-      "Uso de elementos de protección personal (EPP) y capacitaciones de seguridad e higiene.",
+      "Uso de elementos de protección personal (EPP).",
     ],
   },
   {
@@ -104,17 +106,27 @@ export const experience: Experience[] = [
     current: false,
     bullets: [
       "Migración de infraestructura de HFC a FTTH, con fusión de fibra óptica y armado de conectores APC y UPC.",
-      "Despliegue subterráneo de fibra óptica, con uso de elementos de protección personal y capacitaciones de seguridad e higiene.",
+      "Despliegue subterráneo de fibra óptica, uso de elementos de protección personal.",
     ],
   },
   {
     company: "Bapiram / Supercanal",
     role: "Técnico instalador",
-    period: "2022 - 2023",
+    period: "2021 - 2022",
     current: false,
     bullets: [
-      "Instalaciones FTTH, HFC y EOC, con fusión de fibra óptica y armado de conectores APC y UPC.",
-      "Trabajos en altura y con corriente eléctrica, aplicando elementos de protección personal y capacitaciones de seguridad e higiene.",
+      "Instalaciones FTTH, HFC y EOC.",
+      "Trabajos en altura y con corriente eléctrica con uso correspondiente de elementos de proteccion personal.",
+    ],
+  },
+  {
+    company: "Westronic",
+    role: "Operador de Monitoreo",
+    period: "2014 - 2021",
+    current: false,
+    bullets: [
+      "Operador de sala de monitoreo: atención al cliente y resolución remota de afectaciones en sistemas de alarmas.",
+      "Escalamiento de tickets técnicos según la complejidad del caso.",
     ],
   },
 ];
@@ -158,12 +170,37 @@ export type Project = {
   stack: string[];
   repoUrl?: string;
   liveUrl?: string;
+  images?: string[];
   placeholder?: boolean;
 };
 
-// TODO(Emiliano): reemplazar los proyectos "placeholder" por proyectos reales
-// (repos propios, trabajos de los cursos de Platzi, etc.) cuando los tengas listos.
 export const projects: Project[] = [
+  {
+    title: "BodegaPass",
+    description:
+      "Plataforma full stack de turismo enológico en Mendoza: buscador de bodegas, restaurantes y experiencias con filtros por zona y tags, ficha de cada lugar con reserva, y un generador de itinerarios personalizados con IA según días de estadía, zona y presupuesto.",
+    stack: ["Next.js", "PostgreSQL", "Knex", "IA (OpenAI)", "Tailwind CSS"],
+    repoUrl: "https://github.com/ELAPAZCOSSETTI/MendozaWine",
+    images: [
+      "/projects/bodegapass-home.jpg",
+      "/projects/bodegapass-buscar.jpg",
+      "/projects/bodegapass-listing.jpg",
+      "/projects/bodegapass-itinerario.jpg",
+    ],
+  },
+  {
+    title: "Fetiburgers",
+    description:
+      "E-commerce de hamburguesas con catálogo de productos, personalización de pedidos (extras y agregados) y carrito de compras persistente, construido con Next.js. Deployado y en uso real por el cliente.",
+    stack: ["Next.js", "React", "Zustand", "Tailwind CSS"],
+    repoUrl: "https://github.com/ELAPAZCOSSETTI/fetiburgers-ecommerce",
+    liveUrl: "https://fetiburgers.vercel.app/",
+    images: [
+      "/projects/fetiburgers-home.jpg",
+      "/projects/fetiburgers-personalizacion.jpg",
+      "/projects/fetiburgers-mobile.jpg",
+    ],
+  },
   {
     title: "Portfolio Personal",
     description:
@@ -171,16 +208,11 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    title: "Proyecto en camino",
-    description: "[TODO: agregar nombre, descripción y stack de tu próximo proyecto real]",
-    stack: ["React"],
-    placeholder: true,
-  },
-  {
-    title: "Proyecto en camino",
-    description: "[TODO: agregar nombre, descripción y stack de tu próximo proyecto real]",
-    stack: ["Next.js"],
-    placeholder: true,
+    title: "Sistema de Facturación (HTML/CSS embebido)",
+    description:
+      "Rediseño de las plantillas de facturación mensual de un ISP: HTML con CSS embebido y estilos de impresión (@media print) para que el cliente descargue o imprima su factura como PDF directo desde el navegador. Captura con datos y marca ficticios por confidencialidad del empleador.",
+    stack: ["HTML5", "CSS3", "Print to PDF"],
+    images: ["/projects/factura-demo.jpg"],
   },
 ];
 
