@@ -8,6 +8,7 @@ export const personal = {
   whatsapp: "5492612478856",
   linkedin: "https://linkedin.com/in/emilianolp/",
   github: "https://github.com/ELAPAZCOSSETTI" as string | null,
+  platziProfile: "https://platzi.com/@sk8mi95lp/",
   photo: "/images/FotoEmiliano.jpg",
   cvUrl: "/cv-emiliano-lapaz.pdf",
   tagline:

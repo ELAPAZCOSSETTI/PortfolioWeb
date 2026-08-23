@@ -1,5 +1,5 @@
-import { Award } from "lucide-react";
-import { certifications } from "@/data/profile";
+import { Award, ExternalLink } from "lucide-react";
+import { certifications, personal } from "@/data/profile";
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
@@ -27,6 +27,18 @@ export default function Certifications() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={160}>
+          <a
+            href={personal.platziProfile}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent"
+          >
+            Ver perfil y certificados en Platzi
+            <ExternalLink size={14} />
+          </a>
+        </Reveal>
       </Container>
     </section>
   );
