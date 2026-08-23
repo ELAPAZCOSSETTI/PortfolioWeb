@@ -9,6 +9,7 @@ export const personal = {
   linkedin: "https://linkedin.com/in/emilianolp/",
   github: "https://github.com/ELAPAZCOSSETTI" as string | null,
   platziProfile: "https://platzi.com/@sk8mi95lp/",
+  siteUrl: "https://emiliano-lapaz-portfolio.vercel.app",
   photo: "/images/FotoEmiliano.jpg",
   cvUrl: "/cv-emiliano-lapaz.pdf",
   tagline:
