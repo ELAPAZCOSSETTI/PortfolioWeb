@@ -217,11 +217,25 @@ writeFileSync(htmlPath, html, "utf-8");
 const photoDest = path.join(workDir, personal.photo.replace(/^\//, ""));
 mkdirSync(path.dirname(photoDest), { recursive: true });
 const photoSrc = path.join(ROOT, "public", personal.photo);
-// La foto original es una foto de alta resolución (varios MB); la reducimos
-// para no inflar el PDF con una imagen mostrada a 110px de ancho.
+// La foto original es un retrato de medio cuerpo en alta resolución. Para el
+// avatar circular del CV recortamos primero un cuadrado centrado en la cara
+// (si no, el recorte circular por defecto queda centrado en el torso y tapa
+// la cara) y recién después escalamos, sin tocar la imagen que usa la web.
+const CV_PHOTO_CROP = { top: 0.05, side: 0.35, centerX: 0.465 }; // fracciones del alto/ancho original
 execFileSync("python3", [
   "-c",
-  `from PIL import Image; im=Image.open(${JSON.stringify(photoSrc)}); im=im.convert("RGB"); im.thumbnail((400,400)); im.save(${JSON.stringify(photoDest)}, "JPEG", quality=85)`,
+  `
+from PIL import Image
+im = Image.open(${JSON.stringify(photoSrc)}).convert("RGB")
+w, h = im.size
+side = int(${CV_PHOTO_CROP.side} * h)
+top = int(${CV_PHOTO_CROP.top} * h)
+cx = int(${CV_PHOTO_CROP.centerX} * w)
+left = max(0, min(w - side, cx - side // 2))
+im = im.crop((left, top, left + side, top + side))
+im.thumbnail((400, 400))
+im.save(${JSON.stringify(photoDest)}, "JPEG", quality=85)
+`.trim(),
 ]);
 
 const outPath = path.join(ROOT, "public", "cv-emiliano-lapaz.pdf");
