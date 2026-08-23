@@ -1,4 +1,4 @@
-import { Mail, Globe } from "lucide-react";
+import { Mail } from "lucide-react";
 import { personal } from "@/data/profile";
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
@@ -31,15 +31,6 @@ const CHANNELS = [
           icon: GithubIcon,
           label: personal.github.replace("https://", ""),
           href: personal.github,
-        },
-      ]
-    : []),
-  ...(personal.siteUrl
-    ? [
-        {
-          icon: Globe,
-          label: personal.siteUrl.replace("https://", ""),
-          href: personal.siteUrl,
         },
       ]
     : []),

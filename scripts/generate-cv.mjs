@@ -183,6 +183,7 @@ const html = `<!doctype html>
       <div class="contact-item">${escapeHtml(personal.location)}</div>
       <div class="contact-item"><a href="${escapeHtml(personal.linkedin)}">${escapeHtml(personal.linkedin.replace(/^https?:\/\//, ""))}</a></div>
       ${personal.github ? `<div class="contact-item"><a href="${escapeHtml(personal.github)}">${escapeHtml(personal.github.replace(/^https?:\/\//, ""))}</a></div>` : ""}
+      ${personal.siteUrl ? `<div class="contact-item"><a href="${escapeHtml(personal.siteUrl)}">${escapeHtml(personal.siteUrl.replace(/^https?:\/\//, ""))}</a></div>` : ""}
 
       <h2>Educación</h2>
       ${educationHtml}
