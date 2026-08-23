@@ -202,12 +202,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Portfolio Personal",
-    description:
-      "Este mismo sitio: portfolio full stack construido desde cero con Next.js, TypeScript y Tailwind CSS.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
     title: "Sistema de Facturación (HTML/CSS embebido)",
     description:
       "Rediseño de las plantillas de facturación mensual de un ISP: HTML con CSS embebido y estilos de impresión (@media print) para que el cliente descargue o imprima su factura como PDF directo desde el navegador. Captura con datos y marca ficticios por confidencialidad del empleador.",
