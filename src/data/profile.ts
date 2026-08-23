@@ -32,7 +32,7 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "Backend & Datos",
-    items: ["Node.js (fundamentos)", "Bases de datos / SQL", "PostgreSQL", "Docker"],
+    items: ["Node.js", "Bases de datos / SQL", "PostgreSQL", "Docker"],
   },
   {
     title: "Mobile",

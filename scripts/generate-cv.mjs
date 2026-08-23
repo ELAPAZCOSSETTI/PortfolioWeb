@@ -13,14 +13,13 @@ import {
   certifications,
   skills,
   projects,
-  extras,
 } from "../src/data/profile.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
 const PERFIL =
-  "Profesional con base sólida en redes y sistemas (3+ años en telecomunicaciones) y formación intensiva en desarrollo web full stack desde 2024. Actualmente lidera operaciones de soporte técnico e integración de IA conversacional en Wara, combinando gestión de equipos con lógica de producto. Busca dar el salto a roles de desarrollo de software e implementación de IA.";
+  "Soy profesional con base sólida en redes y sistemas (3+ años en telecomunicaciones) y formación intensiva en desarrollo web full stack desde 2024. Actualmente lidero operaciones de soporte técnico e integración de IA conversacional en Wara, combinando gestión de equipos con lógica de producto. Busco dar el salto a roles de desarrollo de software e implementación de IA.";
 
 // Las experiencias más recientes/relevantes llevan bullets completos;
 // las más antiguas se resumen en una linea para no alargar el CV a 3+ páginas.
@@ -143,7 +142,6 @@ const html = `<!doctype html>
   .cert-list { list-style: none; margin: 0; padding: 0; }
   .cert-list li { margin-bottom: 8px; font-size: 9px; }
   .cert-list .muted { color: #9ca3af; }
-  .extra { font-size: 9.5px; color: #d1d5db; }
 
   .main { padding: 28px 30px; }
   .name { font-size: 26px; font-weight: 700; margin: 0; color: #0f2027; }
@@ -194,14 +192,11 @@ const html = `<!doctype html>
 
       <h2>Skills</h2>
       ${skillsHtml}
-
-      <h2>Datos de interés</h2>
-      <div class="extra">${escapeHtml(extras.drivingLicense)}</div>
     </aside>
 
     <main class="main">
       <p class="name">${escapeHtml(personal.name)}</p>
-      <p class="headline">${escapeHtml(personal.role)} · ${escapeHtml(experience[0].role)} en ${escapeHtml(experience[0].company)}</p>
+      <p class="headline">${escapeHtml(personal.role)} · ${escapeHtml(experience[0].role)}</p>
 
       <h2>Perfil profesional</h2>
       <p class="perfil">${PERFIL}</p>
