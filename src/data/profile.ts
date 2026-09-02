@@ -52,7 +52,7 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "Otros conocimientos",
-    items: ["Git y control de versiones", "Postman", "Vercel"],
+    items: ["Git y control de versiones", "Postman", "Vercel", "Odoo", "Jira"],
   },
 ];
 
