@@ -19,7 +19,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
 const PERFIL =
-  "Soy profesional con base sólida en redes y sistemas (3+ años en telecomunicaciones) y formación intensiva en desarrollo web full stack desde 2024. Actualmente lidero operaciones de soporte técnico e integración de IA conversacional en Wara, combinando gestión de equipos con lógica de producto. Busco dar el salto a roles de desarrollo de software e implementación de IA.";
+  "Soy profesional con base sólida en redes y sistemas (3+ años en telecomunicaciones) y formación intensiva en desarrollo web full stack desde 2024. Actualmente lidero operaciones de soporte técnico e integración de IA conversacional en Wara, combinando gestión de equipos con lógica de producto. Me gustaría expandir mi experiencia en roles de desarrollo de software e implementación de IA.";
 
 // Las experiencias más recientes/relevantes llevan bullets completos;
 // las más antiguas se resumen en una linea para no alargar el CV a 3+ páginas.

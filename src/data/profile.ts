@@ -2,7 +2,7 @@ export const personal = {
   name: "Emiliano La Paz",
   role: "Full Stack Developer",
   location: "Luján de Cuyo, Mendoza, Argentina",
-  email: "sk8emi95lp@gmail.com",
+  email: "emiliano.95.lapaz@gmail.com",
   phone: "+54 261 247-8856",
   // Los celulares argentinos necesitan el "9" después del 54 para los links de wa.me.
   whatsapp: "5492612478856",
@@ -19,7 +19,7 @@ export const personal = {
 export const bio = [
   "Técnico Electrónico con más de 3 años de experiencia resolviendo problemas de conectividad, redes y sistemas en entornos reales: desde instalaciones de fibra óptica hasta soporte técnico remoto con manejo de TCP/IP, MikroTik y Linux.",
   "Desde 2024 vengo sumando formación intensiva en desarrollo web full stack (JavaScript, React, Next.js, bases de datos y fundamentos de backend), combinando esa base técnica de redes y sistemas con la construcción de productos web modernos.",
-  "Actualmente soy Technical Support Operations Lead & AI Implementation Specialist en Wara, empresa de software y hardware de tracking GPS. Coordino un equipo de soporte técnico (Nivel 1 y 2) y lidero la integración de un asistente conversacional con IA: diseño la lógica de interacción, la ingeniería de prompts y las pruebas de QA funcional, trabajando codo a codo con las áreas de Desarrollo y Producto para convertir necesidades operativas en soluciones escalables. Hoy busco dar el salto a roles de desarrollo de software e implementación de IA, combinando código, lógica de negocio y gestión de equipos.",
+  "Actualmente soy Technical Support Operations Lead & AI Implementation Specialist en Wara, empresa de software y hardware de tracking GPS. Coordino un equipo de soporte técnico (Nivel 1 y 2) y lidero la integración de un asistente conversacional con IA: diseño la lógica de interacción, la ingeniería de prompts y las pruebas de QA funcional, trabajando codo a codo con las áreas de Desarrollo y Producto para convertir necesidades operativas en soluciones escalables. Me gustaría expandir mi experiencia en roles de desarrollo de software e implementación de IA, combinando código, lógica de negocio y gestión de equipos.",
 ];
 
 export type SkillCategory = {
